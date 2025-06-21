@@ -1,0 +1,23 @@
+@use '../../../styles/mixins';
+
+@reference "tailwindcss";
+
+.gui {
+  @apply flex flex-col items-center min-h-dvh p-5;
+  // @include mixins.bg-gradient;
+  .item {
+    @apply my-4;
+    h1 {
+      @include mixins.h1;
+    }
+    h2 {
+      @include mixins.h2;
+    }
+    p {
+      @apply w-full max-w-[440px];
+    }
+  }
+  .card {
+    @apply w-full max-w-[440px] my-4;
+  }
+}

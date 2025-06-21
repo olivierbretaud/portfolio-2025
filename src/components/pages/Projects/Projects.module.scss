@@ -1,0 +1,10 @@
+@use '../../../styles/mixins';
+
+@reference "tailwindcss";
+
+.projects {
+  @apply w-full max-w-[1300px] p-8 m-auto box-border;
+  .cards {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+}

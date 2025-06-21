@@ -1,0 +1,52 @@
+@use '../../../styles/mixins';
+
+@reference "tailwindcss";
+
+.card {
+  .image {
+    @apply h-60 rounded-md overflow-hidden mb-4;
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+  h3 {
+    @apply m-0 mb-2;
+    color: var(--text-color);
+  }
+  p {
+    @apply m-0 text-sm;
+  }
+  a {
+    @apply appearance-none flex;
+    text-decoration: none;
+    color: var(--text-color);
+    
+    svg {
+      color: var(--text-color);
+      transform: translate(8px, 4px);
+      @apply mr-2;
+    }
+    &:hover {
+      color: mixins.$primary-color;
+      h3 {
+        color: mixins.$primary-color;
+      }
+      svg {
+        color: mixins.$primary-color;
+      } 
+    }
+  }
+  .tags {
+    @apply flex flex-wrap mt-3;
+    p {
+      @apply px-2 py-[2px] rounded-full mr-2 mb-2 text-[11px];
+      @include mixins.transition;
+      border: 1px solid var(--text-color);
+      // &:hover {
+      //   background-color: rgba(#2dd4bf, 0.2);
+      //   border: 1px solid mixins.$primary-color;
+      //   color: mixins.$primary-color;
+      // }
+    }
+  }
+}
