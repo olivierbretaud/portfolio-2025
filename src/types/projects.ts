@@ -8,3 +8,8 @@ export interface IProject {
   link?: string,
   tools?:string[]
 }
+
+export interface ITool {
+  label: string,
+  type: string,
+}

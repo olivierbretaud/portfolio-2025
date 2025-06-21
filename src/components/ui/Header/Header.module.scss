@@ -5,7 +5,7 @@
   overflow: hidden;
   position: relative;
   .content {
-    @apply w-full max-w-[1300px] p-8 m-auto box-border flex-col flex items-center justify-center text-center h-[20rem] md:h-[30rem];
+    @apply w-full max-w-[1300px] p-4 m-auto box-border flex-col flex items-center justify-center text-center h-[20rem] md:h-[30rem];
     h1 {
       @include mixins.h2;
       @apply text-[30px] z-40;
