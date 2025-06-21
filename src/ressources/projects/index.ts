@@ -1,4 +1,4 @@
-import { ProjectType } from '@/types/projects';
+import { IProject } from '@/types/projects';
 import rennes from './pictures/rennes-election.jpg';
 import systemU from './pictures/system-u.jpg';
 import resofit from './pictures/resofit.jpg';
@@ -12,7 +12,7 @@ import upSport from './pictures/up-sport.png';
 import audiar from './pictures/audiar.jpg';
 import octapharma from './pictures/octapharma.jpg';
 
-const projects : ProjectType[] = [
+const projects : IProject[] = [
   {
     title: "Rennes Ville et Métropole",
     description: "Développer une solution sur-mesure de visualisation de résultats électoraux.",
