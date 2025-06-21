@@ -16,13 +16,10 @@
   --max-width: 400px;
 }
 
-*, *::before, *::after, ::backdrop {
-  box-sizing: border-box;
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #292929;
+    --background: #182932;
     --foreground: #ededed;
   }
 }
