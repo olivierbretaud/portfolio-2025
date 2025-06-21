@@ -1,4 +1,4 @@
-import { IProject } from '@/types/projects';
+import { IProject, ITool } from '@/types/projects';
 import rennes from './pictures/rennes-election.jpg';
 import systemU from './pictures/system-u.jpg';
 import resofit from './pictures/resofit.jpg';
@@ -55,7 +55,7 @@ const projects : IProject[] = [
     description: "Développer un outil permettant de visualiser le bassin d’emploi de la région rennaise.",
     tags: ["Datavisualisation"],
     tools: ["React", "D3.js"],
-    link: "https://app.audiar.bakasable.fr/",
+    // link: "https://app.audiar.bakasable.fr/",
     picture: audiar,
   },
   {
@@ -104,3 +104,74 @@ const projects : IProject[] = [
 ];
 
 export default projects;
+
+export const tools : ITool[] = [
+  {
+    label:"React",
+    type: "Front-end"
+  },
+  {
+    label:"Next",
+    type: "Front-end"
+  },
+  {
+    label:"Vite",
+    type: "Front-end"
+  },
+  {
+    label:"Redux",
+    type: "Front-end"
+  },
+  {
+    label:"React Query",
+    type: "Front-end"
+  },
+  {
+    label:"Framer motion",
+    type: "Front-end"
+  },
+  {
+    label:"D3.js",
+    type: "Front-end"
+  },
+  {
+    label:"Sass",
+    type: "Front-end"
+  },
+  {
+    label:"Node.js",
+    type: "Front-end"
+  },
+  {
+    label:"TypeScript",
+    type: "Front-end"
+  },
+  {
+    label:"Express",
+    type: "Front-end"
+  },
+  {
+    label:"Fastify",
+    type: "Front-end"
+  },
+  {
+    label:"MongoDB",
+    type: "Front-end"
+  },
+  {
+    label:"Git",
+    type: "Front-end"
+  },
+  {
+    label:"Cursor",
+    type: "Front-end"
+  },
+  {
+    label:"Figma",
+    type: "Front-end"
+  },
+  {
+    label:"Notion",
+    type: "Front-end"
+  },
+]

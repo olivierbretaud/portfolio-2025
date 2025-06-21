@@ -4,6 +4,7 @@ import Card from '@/components/ui/Card';
 import projects from '@/ressources/projects';
 import { IProject } from '@/types/projects';
 import Header from '@/components/ui/Header';
+import Techno from '@/components/ui/Techno';
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
           {projects.map((p:IProject,i: number) => <Card key={`${p.title}`} index={i} project={p} />)}
         </div>
       </div>
+      <Techno />
     </div>
   )
 }
