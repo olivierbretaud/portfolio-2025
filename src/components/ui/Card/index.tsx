@@ -9,7 +9,7 @@ import { ImLink } from 'react-icons/im'
 import { useWindowSize } from "usehooks-ts";
 
 export default function Card({ project, index }:{ project: ProjectType, index: number }) {
-  console.log(project)
+
   const { width } = useWindowSize();
   return (
     <motion.div

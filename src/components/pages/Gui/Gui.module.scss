@@ -1,7 +1,5 @@
 @use '../../../styles/mixins';
 
-@reference "tailwindcss";
-
 .gui {
   @apply flex flex-col items-center min-h-dvh p-5;
   // @include mixins.bg-gradient;

@@ -1,7 +1,5 @@
 @use '../../../styles/mixins';
 
-@reference "tailwindcss";
-
 .waiting {
   @apply flex flex-col items-center justify-center min-h-dvh;
   // @include mixins.bg-gradient;

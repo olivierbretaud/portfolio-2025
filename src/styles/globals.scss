@@ -1,12 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 :root {
   --background: #ffffff;
   --foreground: #292929;
   --dark: #171717;
   --text-color: #c0bebe;
-  --color-brand-500: #2dd4bf; 
+  --color-brand-500: #2dd4bf;
 }
 
 @theme inline {
@@ -15,8 +12,12 @@
   --font-sans: var(--font-be-vietnam-pro);
   --font-mono: var(--font-geist-mono);
   --white: #ededed,
-  --color-brand-500: #2dd4bf; 
+  --color-brand-500: #2dd4bf;
   --max-width: 400px;
+}
+
+*, *::before, *::after, ::backdrop {
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,6 +1,9 @@
 @use '../../../styles/mixins';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@reference "tailwindcss";
+@layer components {
 
 .card {
   .image {
@@ -40,7 +43,6 @@
     @apply flex flex-wrap mt-3;
     p {
       @apply px-2 py-[2px] rounded-full mr-2 mb-2 text-[11px];
-      @include mixins.transition;
       border: 1px solid var(--text-color);
       // &:hover {
       //   background-color: rgba(#2dd4bf, 0.2);
@@ -49,4 +51,6 @@
       // }
     }
   }
+}
+
 }

@@ -1,8 +1,10 @@
+
 @reference "tailwindcss";
 
 $primary-color: var(--color-brand-500);
 $white: var(--white);
 $dark: var(--dark);    
+
 
 @mixin h1 {
   font-family: var(--font-sans);
