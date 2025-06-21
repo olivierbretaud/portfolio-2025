@@ -1,14 +1,19 @@
 import React from 'react'
-import styles from './Projects.module.scss';
+import styles from './HomePage.module.scss';
 import Card from '@/components/ui/Card';
 import projects from '@/ressources/projects';
-import { ProjectType } from '@/types/projects';
+import { IProject } from '@/types/projects';
+import Header from '@/components/ui/Header';
 
-export default function Projects() {
+export default function HomePage() {
   return (
-    <div className={styles.projects}>
-      <div className={styles.cards}>
-        {projects.map((p:ProjectType,i: number) => <Card key={`${p.title}`} index={i} project={p} />)}
+    <div className={styles.home}>
+      <Header />
+      <div className={styles.projects}>
+        <h2>Projets réalisés</h2>
+        <div className={styles.cards}>
+          {projects.map((p:IProject,i: number) => <Card key={`${p.title}`} index={i} project={p} />)}
+        </div>
       </div>
     </div>
   )

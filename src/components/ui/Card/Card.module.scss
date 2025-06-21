@@ -1,9 +1,4 @@
 @use '../../../styles/mixins';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
 
 .card {
   .image {
@@ -51,6 +46,4 @@
       // }
     }
   }
-}
-
 }
