@@ -1,14 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion";
-import { ProjectType } from '@/types/projects'
+import { IProject } from '@/types/projects'
 import styles from './Card.module.scss'
 import React from 'react'
 import Image from 'next/image'
 import { ImLink } from 'react-icons/im'
 import { useWindowSize } from "usehooks-ts";
 
-export default function Card({ project, index }:{ project: ProjectType, index: number }) {
+export default function Card({ project, index }:{ project: IProject, index: number }) {
 
   const { width } = useWindowSize();
   return (

@@ -1,0 +1,54 @@
+@use '../../../styles/mixins';
+
+.header {
+  @apply h-[20rem] md:h-[30rem];
+  overflow: hidden;
+  position: relative;
+  .content {
+    @apply w-full max-w-[1300px] p-8 m-auto box-border flex-col flex items-center justify-center text-center h-[20rem] md:h-[30rem];
+    h1 {
+      @include mixins.h2;
+      @apply text-[30px] z-40;
+      &:nth-child(2) {
+        @apply text-[16px];
+        color: mixins.$primary-color;
+        line-height: 16px;
+      }
+    }
+    p {
+      @apply max-w-[420px] mb-0 z-40;
+      span {
+        color: mixins.$primary-color;
+      }
+    }
+  }
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 2;
+    }
+  }
+  .imageContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      opacity: 0.3;
+    }
+  }
+}

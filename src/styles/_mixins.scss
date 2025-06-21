@@ -22,11 +22,6 @@ $dark: var(--dark);
 }
 
 @mixin bg-gradient {
-
-  background: radial-gradient(at 47.285464098073554% 60.77148437499999%, #15332F 0px, transparent 50%), radial-gradient(at 78.45884413309983% 0%, #446155 0px, transparent 50%), radial-gradient(at 3.852889667250438% 2.333984375%, #509288 0px, transparent 50%) #0a0a0a;;
+  background: radial-gradient(at 50% -120%, #34c9b5 0px, transparent 600px);
   mix-blend-mode: normal;
-  .frosted-backdrop {
-    backdrop-filter: blur(0px) contrast(100%) brightness(100%);
-    -webkit-backdrop-filter: blur(0px) contrast(100%) brightness(100%);
-  }
 }
