@@ -14,7 +14,7 @@ export default function Header() {
       <div className={styles.content}>
         <h1>Olivier Bretaud</h1>
         <h1>Développeur React.js/Node.js</h1>
-        <p>Je développe des applications JavaScript<br/>au sein de l&apos;agence <span>Bakasable</span> depuis {year} ans.<br/>Voici quelques-uns de mes projets préférés.</p>
+        <p>Je développe des applications JavaScript<br/>au sein de l&apos;agence Bakasable depuis {year} ans.<br/>Voici quelques-uns de mes projets préférés.</p>
       </div>
       <div className={styles.bg}>
           <div
