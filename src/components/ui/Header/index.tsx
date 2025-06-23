@@ -7,14 +7,14 @@ import Image from 'next/image';
 
 export default function Header() {
   const year = new Date().getFullYear() - 2019;
-  const pictures = projects.filter((p:IProject, i: number) => i === 3).map((p:IProject) => p.picture);
+  const pictures = projects.filter((p:IProject) => p.title === 'Octapharma').map((p:IProject) => p.picture);
 
   return (
     <div className={styles.header}>
       <div className={styles.content}>
         <h1>Olivier Bretaud</h1>
         <h1>Développeur React.js/Node.js</h1>
-        <p>Je développe des applications JavaScript<br/>au sein de l&apos;agence Bakasable depuis {year} ans.<br/>Voici quelques-uns de mes projets préférés.</p>
+        <p>Je développe des applications JavaScript<br/>au sein de l&apos;agence Bakasable depuis {year} ans.</p>
       </div>
       <div className={styles.bg}>
           <div
