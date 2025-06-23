@@ -22,21 +22,6 @@ const projects : IProject[] = [
     link: 'https://elections.rennesmetropole.fr/'
   },
   {
-    title: "Système U",
-    description: "Concevoir un showroom numérique interactif avec une interface d’administration, basé sur des images à 360°.",
-    tags: ["Outil métier","Backoffice"],
-    tools: ["React", "mongodb", "node.js", "typescript"],
-    picture: systemU,
-  },
-  {
-    title: "RESOFIT",
-    description: "Développer un site web et son interface d’administration pour un réseau de salles de sports.",
-    tags: ["Site Internet", "Backoffice"],
-    tools: ["Next.js", "mongodb", "node.js", "typescript","React"],
-    link: "https://resofit.fr/",
-    picture: resofit,
-  },
-  {
     title: "Octapharma",
     description: "Développer un outil de recherche de documents pour le corps médical (vue géographique, timeline , cartographie réseau ...)",
     tags: ["Datavisualisation","Outil métier"],
@@ -51,6 +36,13 @@ const projects : IProject[] = [
     picture: bdi,
   },
   {
+    title: "OIIKOS",
+    description: "Développer une solution de gestion et de suivi dédiée à l’exploitation des piscines. ",
+    tags: ["Outil métier"],
+    tools: ["React"],
+    picture: oiikos,
+  },
+  {
     title: "Audiar",
     description: "Développer un outil permettant de visualiser le bassin d’emploi de la région rennaise.",
     tags: ["Datavisualisation"],
@@ -59,20 +51,29 @@ const projects : IProject[] = [
     picture: audiar,
   },
   {
+    title: "RESOFIT",
+    description: "Développer un site web et son interface d’administration pour un réseau de salles de sports.",
+    tags: ["Site Internet", "Backoffice"],
+    tools: ["Next.js", "mongodb", "node.js", "typescript","React"],
+    link: "https://resofit.fr/",
+    picture: resofit,
+  },
+  {
     title: "UpSport&Loisirs",
-    description: "Développer un site web ainsi une plateforme pour les adhérents et les bénéficiaires de chèques-cadeaux loisirs.",
+    description: "Développer un site web ainsi qu'une plateforme pour les adhérents et les bénéficiaires de chèques-cadeaux loisirs.",
     tags: ["Site Internet", "Backoffice","Outil métier"],
     tools: ["Next.js", "mongodb", "node.js", "typescript","React"],
     link: "https://up-sport-loisirs.fr/recherche?page=0&limit=12&isMap=true",
     picture: upSport,
   },
   {
-    title: "OIIKOS",
-    description: "Développer une solution de gestion et de suivi dédiée à l’exploitation des piscines. ",
-    tags: ["Outil métier"],
-    tools: ["React"],
-    picture: oiikos,
+    title: "Système U",
+    description: "Concevoir un showroom numérique interactif avec une interface d’administration, basé sur des images à 360°.",
+    tags: ["Outil métier","Backoffice"],
+    tools: ["React", "mongodb", "node.js", "typescript"],
+    picture: systemU,
   },
+
   {
     title: "Quadrare",
     description: "Développer un module de visualisation de parcours au sein d’une application RH de gestion de parcours professionnels.",
