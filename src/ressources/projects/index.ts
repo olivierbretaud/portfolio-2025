@@ -8,31 +8,63 @@ import mobidys from './pictures/mobydis.jpg';
 import zecompatble from './pictures/zecomptable.jpg';
 import oiikos from './pictures/oiikos-mockup.jpg';
 import quadrare from './pictures/quadrare.jpg';
-import upSport from './pictures/up-sport.png';
+import upSport from './pictures/up-sport.jpg';
 import audiar from './pictures/audiar.jpg';
 import octapharma from './pictures/octapharma.jpg';
+import atlantiqueBoissons from './pictures/atlantique-boissons.jpg';
+import omada from './pictures/omada.jpg';
+import idelprat from './pictures/idelprat.jpg';
+import bakalab from './pictures/bakalab.jpg';
 
-const projects : IProject[] = [
+const projects: IProject[] = [
+  {
+    title: "Idelprat - Cpam",
+    description: "Conception et développement d’un outil de calcul de cotations pour les soins infirmiers ainsi que d’un CMS sur mesure.",
+    tags: ["Site Internet", "Backoffice"],
+    tools: ["Next", "React", "Mongodb", "Fastify", "Typescript"],
+    picture: idelprat
+  },
+  {
+    title: "Omada",
+    description: "Conception et développement d’une plateforme de gestion des plannings pour les piscines.",
+    tags: ["Outil métier"],
+    tools: ["React", "Mongodb", "Express", "Typescript"],
+    picture: omada,
+  },
+  {
+    title: "Bakalab",
+    description: "Développement d’un outil de cartographie des acteurs facilitant l’analyse des réseaux et la compréhension des dynamiques entre les parties prenantes.",
+    tags: ["Outil métier"],
+    tools: ["Pixi.js", "React", "Mongodb", "Express", "Typescript"],
+    picture: bakalab,
+  },
+  {
+    title: "Atlantique Boissons",
+    description: "Développer un outil de prospection en utilisant un service externe et l’API Sirene de l’INSEE.",
+    tags: ["Outil métier"],
+    tools: ["React", "Mongodb", "Express", "Typescript"],
+    picture: atlantiqueBoissons,
+  },
   {
     title: "Rennes Ville et Métropole",
     description: "Développer une solution sur-mesure de visualisation de résultats électoraux.",
     tags: ["Datavisualisation", "Site Internet"],
-    tools: ["React", "d3.js"],
+    tools: ["React", "D3"],
     picture: rennes,
     link: 'https://elections.rennesmetropole.fr/'
   },
   {
     title: "Octapharma",
     description: "Développer un outil de recherche de documents pour le corps médical (vue géographique, timeline , cartographie réseau ...)",
-    tags: ["Datavisualisation","Outil métier"],
+    tags: ["Datavisualisation", "Outil métier"],
     tools: ["React"],
     picture: octapharma,
   },
   {
     title: "Bretagne Développement Innovation",
     description: "Créer un éditeur de tableaux de bord pour visualiser les données relatives aux acteurs de l’innovation en Bretagne.",
-    tags: ["Datavisualisation","Outil métier"],
-    tools: ["React", "mongodb", "node.js", "typescript", "d3.js"],
+    tags: ["Datavisualisation", "Outil métier"],
+    tools: ["React", "Mongodb", "Express", "Typescript", "D3"],
     picture: bdi,
   },
   {
@@ -46,7 +78,7 @@ const projects : IProject[] = [
     title: "Audiar",
     description: "Développer un outil permettant de visualiser le bassin d’emploi de la région rennaise.",
     tags: ["Datavisualisation"],
-    tools: ["React", "D3.js"],
+    tools: ["React", "D3"],
     // link: "https://app.audiar.bakasable.fr/",
     picture: audiar,
   },
@@ -54,23 +86,23 @@ const projects : IProject[] = [
     title: "RESOFIT",
     description: "Développer un site web et son interface d’administration pour un réseau de salles de sports.",
     tags: ["Site Internet", "Backoffice"],
-    tools: ["Next.js", "mongodb", "node.js", "typescript","React"],
+    tools: ["Next", "Mongodb", "Express", "Typescript", "React"],
     link: "https://resofit.fr/",
     picture: resofit,
   },
   {
     title: "UpSport&Loisirs",
     description: "Développer un site web ainsi qu'une plateforme pour les adhérents et les bénéficiaires de chèques-cadeaux loisirs.",
-    tags: ["Site Internet", "Backoffice","Outil métier"],
-    tools: ["Next.js", "mongodb", "node.js", "typescript","React"],
+    tags: ["Site Internet", "Backoffice", "Outil métier"],
+    tools: ["Next", "Mongodb", "Express", "Typescript", "React"],
     link: "https://up-sport-loisirs.fr/recherche?page=0&limit=12&isMap=true",
     picture: upSport,
   },
   {
     title: "Système U",
     description: "Concevoir un showroom numérique interactif avec une interface d’administration, basé sur des images à 360°.",
-    tags: ["Outil métier","Backoffice"],
-    tools: ["React", "mongodb", "node.js", "typescript"],
+    tags: ["Outil métier", "Backoffice"],
+    tools: ["React", "Mongodb", "Express", "Typescript"],
     picture: systemU,
   },
 
@@ -79,7 +111,7 @@ const projects : IProject[] = [
     description: "Développer un module de visualisation de parcours au sein d’une application RH de gestion de parcours professionnels.",
     tags: ["Outil métier", 'Datavisualisation'],
     tools: ["Vue"],
-    picture: quadrare ,
+    picture: quadrare,
   },
   {
     title: "Mobidys",
@@ -91,7 +123,7 @@ const projects : IProject[] = [
   {
     title: "ZeComptable",
     description: "Développer les interfaces d'une suite d’outils numériques destinés aux professionnels de la comptabilité.",
-    tags: ["Site Internet","Backoffice"],
+    tags: ["Site Internet", "Backoffice"],
     tools: ["React"],
     picture: zecompatble,
   },
@@ -106,73 +138,73 @@ const projects : IProject[] = [
 
 export default projects;
 
-export const tools : ITool[] = [
+export const tools: ITool[] = [
   {
-    label:"React",
+    label: "React",
     type: "Front-end"
   },
   {
-    label:"Next",
+    label: "Next",
     type: "Front-end"
   },
   {
-    label:"Vite",
+    label: "Vite",
     type: "Front-end"
   },
   {
-    label:"Redux",
+    label: "Redux",
     type: "Front-end"
   },
   {
-    label:"React Query",
+    label: "React Query",
     type: "Front-end"
   },
   {
-    label:"Framer motion",
+    label: "Framer motion",
     type: "Front-end"
   },
   {
-    label:"D3.js",
+    label: "D3",
     type: "Front-end"
   },
   {
-    label:"Sass",
+    label: "Sass",
     type: "Front-end"
   },
   {
-    label:"Node.js",
+    label: "Express",
     type: "Front-end"
   },
   {
-    label:"TypeScript",
+    label: "TypeScript",
     type: "Front-end"
   },
   {
-    label:"Express",
+    label: "Node.js",
     type: "Front-end"
   },
   {
-    label:"Fastify",
+    label: "Fastify",
     type: "Front-end"
   },
   {
-    label:"MongoDB",
+    label: "MongoDB",
     type: "Front-end"
   },
   {
-    label:"Git",
+    label: "Git",
     type: "Front-end"
   },
   {
-    label:"Cursor",
+    label: "Cursor",
     type: "Front-end"
   },
   {
-    label:"Figma",
+    label: "Figma",
     type: "Front-end"
   },
   {
-    label:"Notion",
+    label: "Notion",
     type: "Front-end"
   },
 ]
