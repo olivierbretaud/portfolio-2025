@@ -15,6 +15,8 @@ import atlantiqueBoissons from './pictures/atlantique-boissons.jpg';
 import omada from './pictures/omada.jpg';
 import idelprat from './pictures/idelprat.jpg';
 import bakalab from './pictures/bakalab.jpg';
+import tepic from './pictures/tepik.png';
+import ecrf from './pictures/ecrf.png';
 
 const projects: IProject[] = [
   {
@@ -54,7 +56,21 @@ const projects: IProject[] = [
     link: 'https://elections.rennesmetropole.fr/'
   },
   {
-    title: "Octapharma",
+    title: "Tepik",
+    description: "Développement d’un outil de formation et d’évaluation des connaissances botaniques",
+    tags: ["Outil métier", "Backoffice"],
+    tools: ["React", "Mongodb", "Express", "Typescript"],
+    picture: tepic,
+  },
+  {
+    title: "Ecrf",
+    description: "Développer un outil de génération de formulaires pour le suivi d’études cliniques",
+    tags: ["Outil métier"],
+    tools: ["React", "Mongodb", "Express", "Typescript"],
+    picture: ecrf,
+  },
+  {
+    title: "Bibliocta",
     description: "Développer un outil de recherche de documents pour le corps médical (vue géographique, timeline , cartographie réseau ...)",
     tags: ["Datavisualisation", "Outil métier"],
     tools: ["React"],
@@ -156,7 +172,7 @@ export const tools: ITool[] = [
     type: "Front-end"
   },
   {
-    label: "React Query",
+    label: "Tanstack Query",
     type: "Front-end"
   },
   {
