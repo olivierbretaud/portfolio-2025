@@ -29,7 +29,7 @@ export default function Header() {
       <div className={styles.content}>
         <h1>Olivier Bretaud</h1>
         <h1>Développeur React.js/Node.js</h1>
-        <p>Développeur JavaScript full-stack depuis {year} ans,<br />je crée des applications web pensées pour offrir<br />une expérience utilisateur de qualité.</p>
+        <p>Depuis {year} ans, je crée des applications web<br />pensées pour offrir une expérience <br />utilisateur de qualité.</p>
       </div>
       <div className={styles.bg}>
         <div className={styles.slider}>
