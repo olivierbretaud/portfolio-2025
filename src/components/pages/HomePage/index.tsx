@@ -8,7 +8,7 @@ import Techno from '@/components/ui/Techno';
 
 export default function HomePage() {
   return (
-    <div className={styles.home}>
+    <>
       <Header />
       <main className={styles.projects}>
         <h2>Projets réalisés</h2>
@@ -17,6 +17,6 @@ export default function HomePage() {
         </div>
       </main>
       <Techno />
-    </div>
+    </>
   )
 }
