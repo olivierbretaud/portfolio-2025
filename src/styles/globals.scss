@@ -29,6 +29,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-be-vietnam-pro);
   margin: 0px;
+  overscroll-behavior: none;
 }
 
 button {

@@ -15,10 +15,20 @@ import atlantiqueBoissons from './pictures/atlantique-boissons.jpg';
 import omada from './pictures/omada.jpg';
 import idelprat from './pictures/idelprat.jpg';
 import bakalab from './pictures/bakalab.jpg';
+import lvtec from './pictures/lvtec.png';
 import tepic from './pictures/tepik.png';
 import ecrf from './pictures/ecrf.png';
 
+
+
 const projects: IProject[] = [
+  {
+    title: "LVTec",
+    description: "Développer une application web dédiée à la location d’échafaudages, permettant d’automatiser la création et le suivi des devis, ainsi que l’organisation et le suivi des chantiers",
+    tags: ["Outil métier"],
+    tools: ["React", "Mongodb", "Express", "Typescript"],
+    picture: lvtec,
+  },
   {
     title: "Idelprat - Cpam",
     description: "Conception et développement d’un outil de calcul de cotations pour les soins infirmiers ainsi que d’un CMS sur mesure.",
@@ -53,7 +63,6 @@ const projects: IProject[] = [
     tags: ["Datavisualisation", "Site Internet"],
     tools: ["React", "D3"],
     picture: rennes,
-    link: 'https://elections.rennesmetropole.fr/'
   },
   {
     title: "Tepik",
@@ -224,3 +233,5 @@ export const tools: ITool[] = [
     type: "Front-end"
   },
 ]
+
+export const year : number = new Date().getFullYear() - 2019;

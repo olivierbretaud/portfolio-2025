@@ -1,28 +1,10 @@
-"use client"
-
-import { useState, useEffect } from 'react'
 import styles from './Header.module.scss'
-import projects from '@/ressources/projects';
+import projects, { year } from '@/ressources/projects';
 import { IProject } from '@/types/projects';
 import Image from 'next/image';
 
-const SLIDE_INTERVAL = 5000;
-
 export default function Header() {
-  const year = new Date().getFullYear() - 2019;
-  const pictures = projects
-    .filter((p: IProject) => ['Bibliocta', 'Bakalab', 'Rennes Ville et Métropole', 'Quadrare', 'Bretagne Développement Innovation', 'OIIKOS'].includes(p.title))
-    .map((p: IProject) => p.picture);
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    if (pictures.length <= 1) return;
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % pictures.length);
-    }, SLIDE_INTERVAL);
-    return () => clearInterval(timer);
-  }, [pictures.length]);
+  const quadrare = projects.find((p: IProject) => p.title === 'Quadrare');
 
   return (
     <div className={styles.header}>
@@ -33,20 +15,15 @@ export default function Header() {
       </div>
       <div className={styles.bg}>
         <div className={styles.slider}>
-          {pictures.map((picture, index) => (
-            <div
-              key={index}
-              className={`${styles.imageContainer} ${index === currentIndex ? styles.active : ''}`}
-            >
-              <Image
-                src={picture}
-                alt={`Project background ${index + 1}`}
-                fill
-                sizes="100vw"
-                priority={index === 0}
-              />
-            </div>
-          ))}
+          <div className={`${styles.imageContainer} ${styles.active}`}>
+            <Image
+              src={quadrare!.picture}
+              alt="Quadrare project background"
+              fill
+              sizes="100vw"
+              priority
+            />
+          </div>
         </div>
       </div>
     </div>
