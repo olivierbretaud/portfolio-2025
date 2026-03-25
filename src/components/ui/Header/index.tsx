@@ -1,10 +1,9 @@
 import styles from './Header.module.scss'
-import projects, { year } from '@/ressources/projects';
-import { IProject } from '@/types/projects';
+import { year } from '@/ressources/projects';
 import Image from 'next/image';
+import quadrare from "@/ressources/projects/pictures/quadrare.jpg"
 
 export default function Header() {
-  const quadrare = projects.find((p: IProject) => p.title === 'Quadrare');
 
   return (
     <div className={styles.header}>
@@ -17,7 +16,7 @@ export default function Header() {
         <div className={styles.slider}>
           <div className={`${styles.imageContainer} ${styles.active}`}>
             <Image
-              src={quadrare!.picture}
+              src={quadrare}
               alt="Quadrare project background"
               fill
               sizes="100vw"
