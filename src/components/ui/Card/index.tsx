@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { IProject } from '@/types/projects'
 import styles from './Card.module.scss'
-import React from 'react'
 import Image from 'next/image'
 import { ImLink } from 'react-icons/im'
 import { useWindowSize } from "usehooks-ts";
@@ -22,7 +21,7 @@ export default function Card({ project, index }:{ project: IProject, index: numb
       transition={{ duration: 0.5, delay: width >= 768 ? index * 0.2 : 0.2 }}
       className={styles.card}>
       <div className={styles.image}>
-        <Image src={project.picture} alt={project.title} />
+        <Image src={project.picture} alt={project.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1300px) 50vw, 33vw" placeholder="blur" style={{ objectFit: 'cover', objectPosition: 'center' }} />
       </div>
       <div className={styles.infos}>
         {project?.link ? <a href={project?.link} target='_blank'>

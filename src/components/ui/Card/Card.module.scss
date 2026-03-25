@@ -2,10 +2,7 @@
 
 .card {
   .image {
-    @apply h-60 rounded-md overflow-hidden mb-4;
-    img {
-      @apply w-full h-full object-cover;
-    }
+    @apply relative h-60 rounded-md overflow-hidden mb-4;
   }
   h3 {
     @apply m-0 mb-2;
