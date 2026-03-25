@@ -13,12 +13,17 @@ const beVietnamPro = Be_Vietnam_Pro({
 const description = `Depuis ${year} ans, je crée des applications web pensées pour offrir une expérience utilisateur de qualité.`;
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "http://localhost:3000"
+  ),
   title: "Olivier Bretaud",
   description,
   openGraph: {
     title: "Olivier Bretaud — Développeur React.js/Node.js",
     description,
-    url: "https://olivierbretaud.vercel.app",
+    url: "/",
     siteName: "Olivier Bretaud",
     locale: "fr_FR",
     type: "website",
