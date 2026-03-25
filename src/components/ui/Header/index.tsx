@@ -1,10 +1,9 @@
 import styles from './Header.module.scss'
-import projects from '@/ressources/projects';
+import projects, { year } from '@/ressources/projects';
 import { IProject } from '@/types/projects';
 import Image from 'next/image';
 
 export default function Header() {
-  const year = new Date().getFullYear() - 2019;
   const quadrare = projects.find((p: IProject) => p.title === 'Quadrare');
 
   return (

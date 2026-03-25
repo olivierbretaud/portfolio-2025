@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
 import "../styles/globals.scss";
+import { year } from "@/ressources/projects";
 
 
 const beVietnamPro = Be_Vietnam_Pro({
@@ -9,9 +10,26 @@ const beVietnamPro = Be_Vietnam_Pro({
   variable: "--font-be-vietnam-pro",
 });
 
+const description = `Depuis ${year} ans, je crée des applications web pensées pour offrir une expérience utilisateur de qualité.`;
+
 export const metadata: Metadata = {
   title: "Olivier Bretaud",
-  description: "Je développe des applications JavaScript au sein de l'agence Bakasable depuis 6 ans.",
+  description,
+  openGraph: {
+    title: "Olivier Bretaud — Développeur React.js/Node.js",
+    description,
+    url: "https://olivierbretaud.vercel.app",
+    siteName: "Olivier Bretaud",
+    locale: "fr_FR",
+    type: "website",
+    images: [{ url: "/og.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Olivier Bretaud — Développeur React.js/Node.js",
+    description,
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({

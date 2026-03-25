@@ -19,6 +19,8 @@ import lvtec from './pictures/lvtec.png';
 import tepic from './pictures/tepik.png';
 import ecrf from './pictures/ecrf.png';
 
+
+
 const projects: IProject[] = [
   {
     title: "LVTec",
@@ -231,3 +233,5 @@ export const tools: ITool[] = [
     type: "Front-end"
   },
 ]
+
+export const year : number = new Date().getFullYear() - 2019;
