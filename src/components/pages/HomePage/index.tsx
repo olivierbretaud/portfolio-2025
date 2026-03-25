@@ -10,12 +10,12 @@ export default function HomePage() {
   return (
     <div className={styles.home}>
       <Header />
-      <div className={styles.projects}>
+      <main className={styles.projects}>
         <h2>Projets réalisés</h2>
         <div className={styles.cards}>
           {projects.map((p:IProject,i: number) => <Card key={`${p.title}`} index={i} project={p} />)}
         </div>
-      </div>
+      </main>
       <Techno />
     </div>
   )
